@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'prueba',
     'login',
+    'cliente',
     'portafolio.apps.PortafolioConfig',
     'contact',
     'prestamo',
