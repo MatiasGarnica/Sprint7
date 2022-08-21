@@ -19,6 +19,8 @@ from django.conf import settings
 from prueba import views as pruebas_views
 from portafolio import views as portafolio_views
 from contact import views as contact_views
+from prestamo import views as prestamo_views
+from tarjeta import views as tarjeta_views
 
 
 urlpatterns = [
@@ -26,6 +28,8 @@ urlpatterns = [
     path('about/', pruebas_views.about, name="about"),
     path('portafolio/', portafolio_views.portafolio, name="portafolio"),
     path('contact/', contact_views.contact, name="contact"),
+    path('prestamo/', prestamo_views.prestamo, name="prestamo"),
+    path('tarjeta/', tarjeta_views.tarjetas, name="tarjeta"),
     path('admin/', admin.site.urls),
     path('accounts/',include('django.contrib.auth.urls')),
 
