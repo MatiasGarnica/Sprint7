@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'portafolio.apps.PortafolioConfig',
     'contact',
     'prestamo',
-    'tarjetas',
+    'tarjeta',
 ]
 
 MIDDLEWARE = [
