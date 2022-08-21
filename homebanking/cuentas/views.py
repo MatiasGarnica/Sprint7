@@ -4,5 +4,5 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 @login_required
-def contact(request):
-    return render(request, 'contact.html')
+def cuentas(request):
+    return render(request, 'cuentas.html')
