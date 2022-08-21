@@ -32,6 +32,12 @@
                 <li>
                     <a href="{% url 'about' %}">about</a>
                 </li> 
+                <li>
+                    <a href="{% url 'portafolio' %}">portafolio</a>
+                </li>
+                <li>
+                    <a href="{% url 'contact' %}">contact</a>
+                </li>
                 {% if not request.user.is_authenticated %}
                 <li>
                     <a href="{% url 'login' %}">Acceder</a>

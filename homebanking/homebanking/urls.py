@@ -17,11 +17,15 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from prueba import views as pruebas_views
+from portafolio import views as portafolio_views
+from contact import views as contact_views
 
 
 urlpatterns = [
     path('', pruebas_views.home, name="home"),
     path('about/', pruebas_views.about, name="about"),
+    path('portafolio/', portafolio_views.portafolio, name="portafolio"),
+    path('contact/', contact_views.contact, name="contact"),
     path('admin/', admin.site.urls),
     path('accounts/',include('django.contrib.auth.urls')),
 ]
